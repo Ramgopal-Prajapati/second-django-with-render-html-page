@@ -7,9 +7,13 @@ make a virtual environment
 -- foldername\Script\activate
 
 pip install django
+
 django-admin startproject second
+
 python .\manage.py startapp "data" (- data name is my app-)
+
 second/second/settings.py → add data to INSTALLED_APPS:
+
 make a templates name folder in "data"
 make a again data name folder in "templates" name folder inside (data app)
 make html pages in this (index.html , ram.html)
@@ -17,7 +21,7 @@ make html pages in this (index.html , ram.html)
 #===================================================
 
 Open data/views.py and add:
->
+
 from django.shortcuts import render
 
 def home(request):
@@ -25,7 +29,7 @@ def home(request):
 
 def ramgopal(request):
     return render(request, 'data/ram.html')
-# make more route here 
+make more route here 
 
 =see in image one.png=    
 #===========================================================================
@@ -72,5 +76,26 @@ http://127.0.0.1:8000/
 
 http://127.0.0.1:8000/ramgopal/
  → shows ram.html
+
+
+
+
+
+
+
+# Second Django Project - Render HTML Pages
+
+This is the **second Django project** where we focus on rendering HTML pages using **views, URLs, and templates**.  
+
+---
+
+## 🚀 Setup Instructions
+
+### 1. Create and activate a virtual environment
+```bash
+python -m venv foldername
+foldername\Scripts\activate   # On Windows
+# OR
+source foldername/bin/activate  # On Mac/Linux
 
  
