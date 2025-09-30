@@ -6,15 +6,16 @@ make a virtual environment
 -- python -m venv foldername
 -- foldername\Script\activate
 
--pip install django
--django-admin startproject second
--python .\manage.py startapp "data" (- data name is my app-)
---- second/second/settings.py → add data to INSTALLED_APPS:
---- make a templates name folder in "data"
---- make a again data name folder in "templates" name folder inside (data app)
---- make html pages in this (index.html , ram.html)
---------------------------------------------------------------------
+pip install django
+django-admin startproject second
+python .\manage.py startapp "data" (- data name is my app-)
+>second/second/settings.py → add data to INSTALLED_APPS:
+>make a templates name folder in "data"
+>make a again data name folder in "templates" name folder inside (data app)
+>make html pages in this (index.html , ram.html)
+========================================================================
 --- Open data/views.py and add:
+>
 from django.shortcuts import render
 
 def home(request):
