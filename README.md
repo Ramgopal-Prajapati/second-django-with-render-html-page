@@ -1,7 +1,7 @@
 # second-django-with-render-html-page
 This is second project of django , in this render html pages , make views , urls and so on 
 
-#=============================================
+============================================
 make a virtual environment 
 -- python -m venv foldername
 -- foldername\Script\activate
@@ -9,12 +9,14 @@ make a virtual environment
 pip install django
 django-admin startproject second
 python .\manage.py startapp "data" (- data name is my app-)
->second/second/settings.py → add data to INSTALLED_APPS:
->make a templates name folder in "data"
->make a again data name folder in "templates" name folder inside (data app)
->make html pages in this (index.html , ram.html)
-========================================================================
---- Open data/views.py and add:
+second/second/settings.py → add data to INSTALLED_APPS:
+make a templates name folder in "data"
+make a again data name folder in "templates" name folder inside (data app)
+make html pages in this (index.html , ram.html)
+
+#===================================================
+
+Open data/views.py and add:
 >
 from django.shortcuts import render
 
@@ -25,8 +27,8 @@ def ramgopal(request):
     return render(request, 'data/ram.html')
 # make more route here 
 
-=== see in image one.png    
-------------------------------------------------------------------------
+=see in image one.png=    
+#===========================================================================
 Make a new file: data/urls.py
 
 from django.urls import path
